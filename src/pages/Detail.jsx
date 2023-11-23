@@ -1,5 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
+
+
 const Detail = () => {
-  return <div></div>;
+  const navigate = useNavigate();
+  return <div>
+    <button onClick={() => navigate('/')}>이전화면</button>
+  </div>;
 };
 
 export default Detail;
